@@ -1,0 +1,3 @@
+@app.get("/api/dashboard")
+def dashboard_api(db: Session = Depends(get_db)):
+    return get_dashboard_data(db)
